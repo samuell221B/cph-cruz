@@ -3,13 +3,12 @@
 
 class cph {
 public:
-enum mode {
-ENCRYPT,
-DECRYPT,
-};
+  enum mode {
+    ENCRYPT,
+    DECRYPT,
+  };
 
-static void cruz(char* in, cph::mode mode = ENCRYPT);
-
+  static void cruz(char *in, cph::mode mode = ENCRYPT);
 };
 
 #endif

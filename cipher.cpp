@@ -19,7 +19,7 @@ void cph::cruz(char *in, cph::mode mode) {
     for (int i = 0; in[i] != '\0'; i++) {
       upp = (in[i] >= 'A' && in[i] <= 'Z');
       in[i] += (upp ? 32 : 0);
-      if (in[i] > 'a' && in[i] < 'z') {
+      if (in[i] >= 'a' && in[i] <= 'z') {
         p = m[i % 12];
         in[i] = (((in[i] - 97) * p) % 26) + 97;
         in[i] -= (upp ? 32 : 0);
